@@ -145,7 +145,7 @@ const ResumeBuilder = ({ initialContent }) => {
         </h1>
 
         <div className="space-x-2">
-          <Button variant="destructive" onClick={onSubmit} disabled={isSaving}>
+          <Button variant="destructive" onClick={onSubmit} disabled={isSaving} className="cursor-pointer">
             {isSaving ? (
               <>
                 <Loader2 className="mr-2 h-4 w-4 animate-spin" />
@@ -159,7 +159,7 @@ const ResumeBuilder = ({ initialContent }) => {
             )}
           </Button>
 
-          <Button onClick={generatePDF} disabled={isGenerating}>
+          <Button className="cursor-pointer" onClick={generatePDF} disabled={isGenerating}>
             {isGenerating ? (
               <>
                 <Loader2 className="h-4 w-4 animate-spin" />
@@ -175,7 +175,7 @@ const ResumeBuilder = ({ initialContent }) => {
         </div>
       </div>
 
-      <Tabs>
+      <Tabs defaultValue="edit">
         <TabsList>
           <TabsTrigger value="edit">Form</TabsTrigger>
           <TabsTrigger value="preview">Markdown</TabsTrigger>
@@ -352,7 +352,7 @@ const ResumeBuilder = ({ initialContent }) => {
           <Button
             variant="link"
             type="button"
-            className="mb-2"
+            className="mb-2 cursor-pointer"
             onClick={() => {
               setResumeMode(resumeMode === "preview" ? "edit" : "preview");
             }}

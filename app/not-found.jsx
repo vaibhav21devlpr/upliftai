@@ -10,7 +10,7 @@ export default function NotFound() {
                 Oops! The page you&apos;re looking for doesn't exist or has been moved.
             </p>
             <Link href="/">
-                <Button>Return Home</Button>
+                <Button className="cursor-pointer">Return Home</Button>
             </Link>
         </div>
     );

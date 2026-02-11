@@ -44,14 +44,14 @@ const HeroSection = () => {
 
             <div className="flex justify-center space-x-4">
                 <Link href="/dashboard">
-                    <Button size="lg" className="px-8">Get Started</Button>
+                    <Button size="lg" className="px-8 cursor-pointer">Get Started</Button>
                 </Link>
             </div>
 
-            <div className="hero-image-wrapper mt-5 md:mt-0">
+            <div className="hero-image-wrapper mt-5 md:mt-0 overflow-hidden">
                 <div ref={imageRef} className="hero-image">
                     <Image 
-                    src="/banner2.jpeg"
+                    src="/banner2.png"
                     width={1080}
                     height={720}
                     alt="Banner UpLiftAI"

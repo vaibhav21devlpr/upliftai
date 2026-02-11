@@ -56,7 +56,7 @@ const QuizResult = ({ result, hideStartNew = false, onStartNew }) => {
 
       {!hideStartNew && (
         <CardFooter>
-            <Button onClick={onStartNew} className="w-full">
+            <Button onClick={onStartNew} className="w-full cursor-pointer">
                 Start New Quiz 
             </Button>
         </CardFooter>

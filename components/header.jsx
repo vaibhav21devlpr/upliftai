@@ -31,7 +31,7 @@ const Header = async () => {
           <div className="flex items-center space-x-2 md:space-x-4">
             <SignedIn>
               <Link href={"/dashboard"}>
-                <Button variant="outline">
+                <Button variant="outline" className="cursor-pointer">
                   <LayoutDashboard className="h-4 w-4" />
                   <span className="hidden md:block">Industry Insights</span>
                 </Button>
@@ -39,7 +39,7 @@ const Header = async () => {
 
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
-                  <Button>
+                  <Button className="cursor-pointer">
                     <StarsIcon className="h-4 w-4" />
                     <span className="hidden md:block">Growth Tools</span>
                     <ChevronDown className="h-4 w-4" />
@@ -70,7 +70,7 @@ const Header = async () => {
 
             <SignedOut>
               <SignInButton>
-                <Button variant="outline">Sign In</Button>
+                <Button className="cursor-pointer" variant="outline">Sign In</Button>
               </SignInButton>
             </SignedOut>
             <SignedIn>

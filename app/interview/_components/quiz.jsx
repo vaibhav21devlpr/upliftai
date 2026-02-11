@@ -113,7 +113,7 @@ const Quiz = () => {
           </p>
         </CardContent>
         <CardFooter>
-          <Button className="w-full" onClick={generateQuizFn}>
+          <Button className="w-full cursor-pointer" onClick={generateQuizFn}>
             Start Quiz
           </Button>
         </CardFooter>
@@ -158,6 +158,7 @@ const Quiz = () => {
       <CardFooter>
         {!showExplanation && (
           <Button
+            className="cursor-pointer"
             onClick={() => setShowExplanation(true)}
             variant="outline"
             disabled={!answers[currentQuestion]}
@@ -168,7 +169,7 @@ const Quiz = () => {
 
         <Button
           onClick={handleNext}
-          className="ml-auto"
+          className="ml-auto cursor-pointer"
           disabled={!answers[currentQuestion] || savingResult}
         >
           {savingResult && <Loader2 className="mr-2 h-4 w-4 animate-spin" />}

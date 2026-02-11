@@ -27,7 +27,7 @@ const QuizList = ({ assessments }) => {
             </CardTitle>
             <CardDescription>Review your past quiz performance</CardDescription>
           </div>
-          <Button onClick={() => router.push("/interview/mock")}>
+          <Button className="cursor-pointer" onClick={() => router.push("/interview/mock")}>
             Start New Quiz
           </Button>
         </CardHeader>

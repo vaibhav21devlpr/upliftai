@@ -110,6 +110,7 @@ const EntryForm = ({ type, entries, onChange }) => {
                   {item.title} @ {item.organization}
                 </CardTitle>
                 <Button
+                  className="cursor-pointer"
                   variant="outline"
                   size="icon"
                   type="button"
@@ -226,6 +227,7 @@ const EntryForm = ({ type, entries, onChange }) => {
 
             <Button
               type="button"
+              className="cursor-pointer"
               variant="ghost"
               size="sm"
               onClick={handleImproveDescription}
@@ -246,6 +248,7 @@ const EntryForm = ({ type, entries, onChange }) => {
           </CardContent>
           <CardFooter className="flex justify-end space-x-2">
             <Button
+              className="cursor-pointer"
               type="button"
               variant="outline"
               onClick={() => {
@@ -255,7 +258,7 @@ const EntryForm = ({ type, entries, onChange }) => {
             >
               Cancel
             </Button>
-            <Button type="button" onClick={handleAdd}>
+            <Button className="cursor-pointer" type="button" onClick={handleAdd}>
               <PlusCircle className="h-4 w-4 mr-2" />
               Add Entry
             </Button>
@@ -266,7 +269,7 @@ const EntryForm = ({ type, entries, onChange }) => {
       {/* When button is not clicked */}
       {!isAdding && (
         <Button
-          className="w-full"
+          className="w-full cursor-pointer"
           variant="outline"
           onClick={() => setIsAdding(true)}
         >
