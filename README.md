@@ -42,7 +42,7 @@ Check out the live deployment of UPLIFTAI:
 
 ### 1. Clone the Repository
 ```bash
-git clone <repository-url>
+git clone <https://github.com/vaibhav21devlpr/upliftai>
 cd UPLIFTAI
 ```
 
